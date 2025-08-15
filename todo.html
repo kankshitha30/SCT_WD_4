@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskMaster</title>
+    <link rel="stylesheet" href="todo.css">
+</head>
+<body>
+    <div id="start">
+     <div id="start1">
+        <h1>Welcome to TaskMaster!!</h1>
+     </div>
+     <p>Here's a TO-DO web app that note downs all your tasks</p>
+    </div>
+    <div id="whole">
+     <div id="part1">
+       <div id="box1">
+        <input type="text" id="taskInput" placeholder="Enter your task" required>
+       </div>
+      <button id="button">ADD TASK</button>
+     </div>
+     <div id="part2">
+        <select id="prioritySelect" required>
+        <option value="" disabled selected>Select Priority</option>
+        <option value="Low">Low priority</option>
+        <option value="Medium">Medium priority</option>
+        <option value="High">High priority</option>
+        </select>
+        <input type="date" id="dueDate">
+        <input type="time" id="dueTime">
+     </div>
+    </div>
+        <div id="part3">
+            <div id="tick" class="header-cell">✓</div>
+            <div id="task" class="header-cell">Task</div>
+            <div id="prio" class="header-cell">Priority</div>
+            <div id="due" class="header-cell">Due-Date</div>
+            <div id="act" class="header-cell">Actions</div>
+        </div>
+        <div id="taskList" class="tasks-container">
+        
+        </div>
+    <script src="todo.js"></script>
+</body>
+</html>
